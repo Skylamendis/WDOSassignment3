@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <script src="https://kit.fontawesome.com/d5cb29f274.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <a href="#"><img src="images/logo.png" class="logo" alt=""></a>
+            <div>
+                <ul id="navbar">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ANIMALS AND PLANTS</a></li>
+                    <li><a href="purchas.html">PURCHASE</a></li>
+                    <li><a href="index.html">DONATE</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                    <li><a href="cart.html" id="cart-icon"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                </ul>
+            </div>
+        </header>
+        <section class="donate container">
+            <h2 class="section-title">DONATION</h2>
+            <div class="donate-content">
+                <form id="donateForm">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="address">Address:</label>  
+                    <textarea cols="30" rows="4" id="address" name="address" > 
+                    </textarea>
+                    
+                   <legend>Donation Amount</legend>
+                   <input type="radio" id="amount-1" name="AmountType" value="100">
+                   <label for="amount">LKR 100</label>
+
+                   <input type="radio" id="amount-2" name="AmountType" value="250">
+                   <label for="amount">LKR 250</label>
+
+                   <input type="radio" id="amount-3" name="AmountType" value="500">
+                   <label for="amount">LKR 500</label>
+
+                   <input type="radio" id="amount-4" name="AmountType" value="1000">
+                   <label for="amount">LKR 1000</label>
+
+                   <input type="radio" id="amount-5" name="AmountType" value="2500">
+                   <label for="amount">LKR 2500</label>
+
+                   <input type="radio" id="amount-6" name="AmountType" value="5000">
+                   <label for="amount">LKR 5000</label>
+                  
+                   <input type="radio" id="amount-7" name="AmountType" value="10000">
+                   <label for="amount">LKR 10000</label>
+
+                    <legend>Card details</legend>
+                    <p>
+                        <input type="radio" id="visa" name="cardType" value="visa" >
+                        <i class="fa-brands fa-cc-visa"></i>
+                        <label for="visa">Visa</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="mc" name="cardType" value="mastercard">
+                        <i class="fa-brands fa-cc-mastercard"></i>
+                        <label for="mastercard">Masterecard</label>
+                    </p> 
+            
+                    <p>
+                        <label for="securityCode">Security code:</label>
+                        <input type="text" id="securityCode" name="securityCode" placeholder="last 3 digits on the back of the card" pattern="^[0-9]{3}$">
+                    </p> 
+            
+                    <p> 
+                        <label for="expiryDate">Expiry date:</label>
+                        <input type="month" id="expiryDate" name="expiryDate" min="2019-11" value="2019-11">
+                    </p> 
+                    <button type="button" class="btn-donate">DONATE</button>
+                </form>
+            </div>
+        </section>
+        <script src="script.js"></script>
+    </body>
+</html>
